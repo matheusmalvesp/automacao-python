@@ -49,6 +49,6 @@ while contador < limite: #inserir a quantidade de registros
   time.sleep(3)
   contador += 1
   if contador == 1:
-    print(f'Fo excluído {contador} resgistro')
+    print(f'Foi excluído {contador} resgistro')
   else:
     print(f'Foram excluídos {contador} resgistros')
