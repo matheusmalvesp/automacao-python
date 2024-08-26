@@ -7,4 +7,4 @@ try:
         print(f'X: {x}, Y: {y}', end='\r')  # Imprime as coordenadas no console
         time.sleep(0.1)  # Atraso de 0,1 segundo para evitar sobrecarga de CPU
 except KeyboardInterrupt:
-    print("\nPrograma encerrado.")
+    print("\nPrograma encerrado.")                           

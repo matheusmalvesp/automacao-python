@@ -10,7 +10,7 @@ def tabs(a):
     pag.press('tab')
 
 
-coord_chrome = (3049, 215)
+coord_chrome = (2071, 2207)
 
 coord_select_us = 15
 coord_btn_visualizar = 6
@@ -35,7 +35,7 @@ while contador < limite: #inserir a quantidade de registros
   pag.press('enter')
   time.sleep(3)
   pag.press('tab')
-  pag.write('rural')#nome da equipe
+  pag.write('camboapina')#nome da equipe
   pag.press('enter')
   time.sleep(3)
   tabs(coord_btn_visualizar)#inserir coord do btn do olho de visualizar
@@ -48,3 +48,7 @@ while contador < limite: #inserir a quantidade de registros
   pag.press('enter')
   time.sleep(3)
   contador += 1
+  if contador == 1:
+    print(f'Fo excluído {contador} resgistro')
+  else:
+    print(f'Foram excluídos {contador} resgistros')
