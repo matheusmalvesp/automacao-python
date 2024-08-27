@@ -29,7 +29,7 @@ clicar_em_coord(coord_chrome)
 
 while contador < limite: #inserir a quantidade de registros  
   pag.press('f5')
-  time.sleep(5)
+  time.sleep(3)
   tabs(coord_select_us)#inserir coord do select da Unidade
   pag.write('terra')
   pag.press('enter')
@@ -47,6 +47,9 @@ while contador < limite: #inserir a quantidade de registros
   tabs(coord_btn_excluir)#inserir coord do icone do btn excluir
   pag.press('enter')
   time.sleep(3)
+  if contador == 10:
+    pag.press('f5')
+    time.sleep(3)
   contador += 1
   if contador == 1:
     print(f'Foi excluído {contador} registro')
