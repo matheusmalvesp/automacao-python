@@ -23,7 +23,7 @@ coord_btn_excluir = 10
 # coord_btn_excluir = (3576, 252)
 
 contador = 0
-limite = 9
+limite = 50
 
 clicar_em_coord(coord_chrome)
 
@@ -49,6 +49,6 @@ while contador < limite: #inserir a quantidade de registros
   time.sleep(3)
   contador += 1
   if contador == 1:
-    print(f'Foi excluído {contador} resgistro')
+    print(f'Foi excluído {contador} registro')
   else:
-    print(f'Foram excluídos {contador} resgistros')
+    print(f'Foram excluídos {contador} registros')
